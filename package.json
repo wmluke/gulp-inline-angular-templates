@@ -1,7 +1,7 @@
 {
     "name": "gulp-inline-angular-templates",
     "version": "0.1.0",
-    "description": "",
+    "description": "Inline angular templates into an HTML file",
     "license": "MIT",
     "repository": "wmluke/gulp-inline-angular-templates",
     "author": {
