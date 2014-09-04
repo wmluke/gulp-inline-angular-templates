@@ -1,6 +1,6 @@
 {
     "name": "gulp-inline-angular-templates",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Inline angular templates into an HTML file",
     "license": "MIT",
     "repository": "wmluke/gulp-inline-angular-templates",
@@ -15,6 +15,7 @@
     "scripts": {
         "test": "./node_modules/mocha/bin/mocha"
     },
+    "main": "./src/index.js",
     "files": [
         "./src/index.js"
     ],
