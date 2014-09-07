@@ -1,41 +1,41 @@
 {
-    "name": "gulp-inline-angular-templates",
-    "version": "0.1.2",
-    "description": "Inline angular templates into an HTML file",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/wmluke/gulp-inline-angular-templates.git"
-    },
-    "author": {
-        "name": "wmluke",
-        "email": "wmlukeb@gmail.com",
-        "url": "https://github.com/wmluke"
-    },
-    "engines": {
-        "node": ">=0.10.0"
-    },
-    "scripts": {
-        "test": "./node_modules/mocha/bin/mocha"
-    },
-    "main": "./src/index.js",
-    "files": [
-        "./src/index.js"
-    ],
-    "keywords": [
-        "gulpplugin angular templates cache"
-    ],
-    "dependencies": {
-        "cheerio": "^0.17.0",
-        "event-stream": "^3.1.5",
-        "gulp-util": "~2.2.14",
-        "lodash": "^2.4.1",
-        "through2": "~0.4.1",
-        "vinyl-fs": "^0.1.4",
-        "vinyl-source-stream": "^0.1.1"
-    },
-    "devDependencies": {
-        "mocha": "*",
-        "graceful-fs": "~3.0.2"
-    }
+  "name": "gulp-inline-angular-templates",
+  "version": "0.1.3",
+  "description": "Inline angular templates into an HTML file",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wmluke/gulp-inline-angular-templates.git"
+  },
+  "author": {
+    "name": "wmluke",
+    "email": "wmlukeb@gmail.com",
+    "url": "https://github.com/wmluke"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "main": "./src/index.js",
+  "files": [
+    "./src/index.js"
+  ],
+  "keywords": [
+    "gulpplugin angular templates cache"
+  ],
+  "dependencies": {
+    "cheerio": "^0.17.0",
+    "event-stream": "^3.1.5",
+    "gulp-util": "~2.2.14",
+    "lodash": "^2.4.1",
+    "through2": "~0.4.1",
+    "vinyl-fs": "^0.1.4",
+    "vinyl-source-stream": "^0.1.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "graceful-fs": "~3.0.2"
+  }
 }
