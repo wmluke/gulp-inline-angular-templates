@@ -15,8 +15,8 @@ var gulp = require('gulp');
 var inlineAngularTemplates = require('gulp-inline-angular-templates');
 
 gulp.task('default', function () {
-    return gulp.src('dist/index.html')
-        .pipe(inlineAngularTemplates({
+    return gulp.src('dist/templates/**/*.html')
+        .pipe(inlineAngularTemplates('dist/index.html', {
              base: 'dist/templates', // (Optional) ID of the <script> tag will be relative to this folder. Default is project dir.
              prefix: '/',            // (Optional) Prefix path to the ID. Default is empty string.
              selector: 'body',       // (Optional) CSS selector of the element to use to insert the templates. Default is `body`.
