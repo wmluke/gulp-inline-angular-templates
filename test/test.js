@@ -1,8 +1,8 @@
 'use strict';
 var assert = require('assert');
-var gutil = require('gulp-util');
 var path = require('path');
 var fs = require('graceful-fs');
+var Vinyl = require('vinyl');
 var inlineAngularTemplates = require('./../src/index.js');
 
 function stripBlankLines(content) {
@@ -10,7 +10,7 @@ function stripBlankLines(content) {
 }
 
 function readFile(filePath) {
-    return new gutil.File({
+    return new Vinyl({
         base: path.dirname(filePath),
         path: filePath,
         contents: fs.readFileSync(filePath)
