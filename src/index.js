@@ -1,5 +1,5 @@
 'use strict';
-var gutil = require('gulp-util');
+var PluginError = require('plugin-error');
 var cheerio = require('cheerio');
 var path = require('path');
 var _ = require('lodash');
@@ -40,7 +40,7 @@ module.exports = function (target, options) {
         }
 
         if (file.isStream()) {
-            this.emit('error', new gutil.PluginError('gulp-inline-angular-templates', 'Streaming not supported'));
+            this.emit('error', new PluginError('gulp-inline-angular-templates', 'Streaming not supported'));
             return cb();
         }
 
@@ -54,7 +54,7 @@ module.exports = function (target, options) {
         try {
             buffer.push(new Buffer('<script type="text/ng-template" id="' + templateUrl + '">\n' + contents + '\n</script>\n'));
         } catch (err) {
-            this.emit('error', new gutil.PluginError('gulp-inline-angular-templates', err));
+            this.emit('error', new PluginError('gulp-inline-angular-templates', err));
         }
     }
 
